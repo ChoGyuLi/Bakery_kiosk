@@ -92,13 +92,13 @@ div img {
  
 }
 
-.tableDiv{
+.tableDiv {
     display: flex;
-    margin-left: 15%;
-    /* justify-content:center; */
-    /* justify-content: space-evenly; */
+    justify-content: center; 
+    align-items: center; 
     margin-top: 10%;
 }
+
 
 
 .imgItem{
@@ -109,12 +109,16 @@ div img {
     height: 250px;
     padding-top: 15px;
     text-align: center;
-
  
 }
 
 .tableDiv :hover {
     transform: translate( 5px, -20px);
+}
+
+.imgItem img,
+.imgItem figcaption {
+    pointer-events: none; /* img와 figcaption 요소에 pointer-events를 none으로 설정 */
 }
 
 #bread {
@@ -159,13 +163,14 @@ div img {
     height: 300px;
     display: inline-block;
     text-align: center;
-    padding: 30% 5% 0 5%;
+    padding: 30% 3% 0 3%;
 }
 
+
 #odM input{
-    width: 76px;
+    width: 15%; /* 부모 요소인 #odM에 대해 15% 크기로 설정 */
     height: 30px;
-    font-size: x-large;
+    font-size: 2vw; /* 화면 비율에 맞게 폰트 크기 조정 */
     font-weight: bold;
     text-align: right;
     font-family: 'GangwonEdu_OTFBoldA';
