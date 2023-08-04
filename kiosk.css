@@ -1,0 +1,191 @@
+* {
+    margin:0px;
+    padding:0px;
+} 
+
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#headBg {
+    font-family:'SDSamliphopangche_Outline';
+
+  }
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GangwonEdu_OTFBoldA';
+    background-color: #cd9d5e;
+}
+
+#header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#header img {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding-top: 0;
+}
+
+#headBg {
+    padding: 10px 0px;
+    width: 80%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 40px 80px / 80px 40px;
+    
+}
+
+/*메뉴*/
+
+#menu {
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 62%;
+    height: 580px;
+    /* border-radius: 40px 80px / 80px 40px; */
+    border-radius: 12px;
+    position: relative;
+    float: left;
+}
+
+#menu h2 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#order {
+    background-color: white;
+    margin-right: 5%;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 26%;
+    height: 580px;
+    /* border-radius: 40px 80px / 80px 40px; */
+    border-radius: 20px;
+    float: left;
+}
+
+#sign {
+    width: 120px;
+    position: relative;
+    left:30px; top: -100px;
+}
+
+div img {
+    width: 120px;
+    height: 120px;
+    padding-top: 20px;
+ 
+}
+
+.tableDiv{
+    display: flex;
+    margin-left: 15%;
+    /* justify-content:center; */
+    /* justify-content: space-evenly; */
+    margin-top: 10%;
+}
+
+
+.imgItem{
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px 5px rgba(33, 33, 33, 0.1);
+    background-color: white;
+    width: 180px;
+    height: 250px;
+    padding-top: 15px;
+    text-align: center;
+
+ 
+}
+
+.tableDiv :hover {
+    transform: translate( 5px, -20px);
+}
+
+#bread {
+    z-index: 4;
+}
+#cheese {
+    z-index: 3;
+    position: relative;
+    right:20px; 
+}
+#ham {
+    z-index: 2;
+    position: relative;
+    right:35px; 
+}
+#vegetable {
+    z-index: 1;
+    position: relative;
+    right:55px; 
+}
+
+.tableDiv figcaption {
+    font-size: large;
+    padding-top: 30px;
+}
+
+#menuCh {
+    margin: 5%;
+    font-size:x-large;
+    text-align: center;
+    height: 60%;
+    
+}
+
+#total {
+    margin: 5%;
+    text-align: center;
+    
+}
+
+#odM  {
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    padding: 30% 5% 0 5%;
+}
+
+#odM input{
+    width: 76px;
+    height: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: orange;
+    border: none;
+}
+
+.btn {
+    width: 80px;
+    height: 40px;
+    border-color: pink;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.btn:active {
+    box-shadow:  1px 1px 1px 1px gray inset;
+    transform: translate(2px, 1px);
+    background-color: pink;
+    color: white;
+
+}
