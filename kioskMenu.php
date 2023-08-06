@@ -77,8 +77,8 @@
     echo"</h3>";
  
 
-    $dbcon = mysqli_connect('localhost','wh3614208','tangerine53!');
-             mysqli_select_db($dbcon,'wh3614208');
+    $dbcon = mysqli_connect('localhost','root','');
+             mysqli_select_db($dbcon,'kt');
  
     $query = "insert into orderM values ('$orderB',$countB,'$orderC',$countC,'$orderH',$countH,$total)";
     $result = mysqli_query($dbcon,$query);

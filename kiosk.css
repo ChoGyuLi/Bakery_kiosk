@@ -118,7 +118,7 @@ div img {
 
 .imgItem img,
 .imgItem figcaption {
-    pointer-events: none; /* img와 figcaption 요소에 pointer-events를 none으로 설정 */
+    pointer-events: none;
 }
 
 #bread {
@@ -150,7 +150,6 @@ div img {
     font-size:x-large;
     text-align: center;
     height: 60%;
-    
 }
 
 #total {
@@ -163,14 +162,15 @@ div img {
     height: 300px;
     display: inline-block;
     text-align: center;
-    padding: 30% 3% 0 3%;
+    width: 90%;
+    padding: 20% 1% 1% 1%;
 }
 
 
 #odM input{
-    width: 15%; /* 부모 요소인 #odM에 대해 15% 크기로 설정 */
+    width: 62%;
     height: 30px;
-    font-size: 2vw; /* 화면 비율에 맞게 폰트 크기 조정 */
+    font-size: 1.4vw;
     font-weight: bold;
     text-align: right;
     font-family: 'GangwonEdu_OTFBoldA';

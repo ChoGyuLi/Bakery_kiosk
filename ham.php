@@ -90,8 +90,13 @@
 <?php
     //$bread = $_POST['bread'];
 
-    $dbcon = mysqli_connect('localhost','wh3614208','tangerine53!');
-    mysqli_select_db($dbcon, 'wh3614208');
+    // $dbcon = mysqli_connect('localhost','wh3614208','tangerine53!');
+    // mysqli_select_db($dbcon, 'wh3614208');
+
+
+    $dbcon = mysqli_connect('localhost','root','');
+    mysqli_select_db($dbcon, 'kt');
+
     $query = "select * from menu";
     $result = mysqli_query($dbcon, $query);
     
@@ -113,10 +118,12 @@
         var resultElement = document.getElementById('cnt');
         var number = resultElement.innerText;
         
-        if(type === 'plus') {
+        if (type === 'plus'){
             number = parseInt(number) + 1;
-        }else if(type === 'minus')  {
+        }else if(type === 'minus'){
+        if (parseInt(number) > 0) {
             number = parseInt(number) - 1;
+            }
         }
 
         resultElement.innerText = number;
